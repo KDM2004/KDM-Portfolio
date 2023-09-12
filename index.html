@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('/Images/KDM\ img\ for\ portfolio.jpg');
+      min-height: 100%;
+    }
+    img {
+      border-radius: 50%;
+    }
+    .typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(30, end) forwards;
+  animation-iteration-count: infinite; /* Repeat animation indefinitely */
+}
+
+.typewriter:not(:last-child)::after {
+  content: '|';
+  display: inline-block;
+  margin-left: 0.1em;
+  animation: blink 0.5s infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  to { opacity: 0; }
+}
+
+.dynamic-image1 {
+  width: 300px; /* Set the image width */
+  height: auto; /* Set the image height to auto */
+  animation: rotate 7s linear infinite; /* Set the animation effect */
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); } /* Start with 0 degree rotation */
+  to { transform: rotate(360deg); } /* End with 360 degree rotation */
+}
+.dynamic-image2 {
+  width: 300px;
+  height: auto;
+  animation: rotate 0.4s linear infinite, zoom 2s ease-out infinite;
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes zoom {
+  0% { transform: scale(1); } /* Start with no scaling */
+  50% { transform: scale(1.2); } /* Scale up to 1.2x at 50% of the animation */
+  100% { transform: scale(1); } /* Return to original scale at the end */
+}
+.dynamic-image3 {
+  width: 300px;
+  height: auto;
+  position: relative;
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0% { transform: translate(0, 0); } /* Start with no translation */
+  50% { transform: translate(0, -20px); } /* Move up by 20px at 50% of the animation */
+  100% { transform: translate(0, 0); } /* Return to original position at the end */
+}
+.dynamic-image3::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform-origin: top;
+  animation: fade-in-out 5s ease-in-out infinite;
+}
+@keyframes fade-in-out {
+  0%, 100% { opacity: 0; } /* Start and end with no opacity */
+  50% { opacity: 1; } /* Fade in to full opacity at 50% of the animation */
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 65px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 5px;
+  border-radius: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.flicker {
+  animation-name: flicker;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flicker {
+  0%, 18%, 20%, 24%, 26%, 36%, 100% {
+    opacity: 1;
+  }
+  19%, 21%, 25%, 35% {
+    opacity: 0;
+  }
+}
+
+.text-container1 {
+  text-align: center;
+}
+
+.typewriter1 {
+  overflow: hidden;
+  animation-name: typing;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: steps(10);
+  border-right: .15em solid rgb(0, 0, 0);
+  white-space: nowrap;
+  letter-spacing: .10em;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+  </style>
+  </head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <!-- <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span> -->
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="typewriter"><b>Karan Modi</b></h1>
+    <h4><p><b>Web Designer.</b></p></h4>
+    <img src="/Images/KDM img for portfolio.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="/Images/KDM img for portfolio.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <a href="https://drive.google.com/file/d/1LDIzah9l2Ccvfrzbz1Ec2BdzMFb1gAKV/view?usp=sharing">
+    <button class="button">
+      <i class="fa fa-download"></i><b>Resume</b>
+    </button></a>
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h3 class="w3-padding-24 w3-text-black"></b></h3>
+    <hr class="w3-opacity">
+    <div class="text-container1">
+      <h2 class="w3-container typewriter" style="padding:128px 16px"><b>About MySelf...</b></h2>
+    </div>
+  <p><b>
+    I am a web developer with 2 years above of work experience over my skills. I have created many websites, including responsive websites, using HTML, CSS, and JavaScript.
+    <br>
+    <br>
+    I am passionate about web development and always looking for new ways to improve my skills. I am also a team player and I am always willing to help others.
+    <br>
+    <br>
+    I am confident that I can use my skills and experience to contribute to your Company/Domain/Field/Projects, also a hard worker and always willing to go the extra mile. I am also a quick learner and always eager to take on new challenges.</b></p>
+
+  <!-- End Portfolio Section -->
+  </div>
+  
+  
+
+  <!-- About Section -->
+  <div class="w3-padding-32 w3-content" id="about">
+    <h3 class="w3-padding-24 w3-text-black"></h3>
+    <hr class="w3-opacity">
+    <div class="text-container1">
+      <h2 class="w3-container typewriter" style="padding:128px 16px"><b>My Projects...</b></h2>
+    </div>
+    
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <a href="https://kdm2004.github.io/FLY-FLY-Financial-Literacy-For-You/index.html"><img class="dynamic-image1" src="Images/FLY Logo.jpg" style="width: 50%"></a>
+        <p><b>FLY:</b> Financial Literay For Youth, A website that helps you learn and apply the essential financial terms in your daily life. Whether you want to improve your budgeting skills, understand how interest rates work, or plan for your retirement, FinLit has you covered. You can access interactive lessons, quizzes, videos, and articles on various financial topics, and get personalized feedback and tips. FinLit also connects you with a community of like-minded learners who share their experiences and insights. Join FLY today and take charge of your financial future!</p>
+      </div>
+
+      <div class="w3-half">
+        <a href="https://findmywaywithus.netlify.app/"><img class="dynamic-image2" src="Images/Find my way.jpg" style="width: 50%"></a>
+        <p><b>Find My way:</b> Welcome to Findmyway, A website that helps you book tickets for any public and private transportation services. Whether you want to travel by plane, bus, car,trains or any other mode of transport, Findmyway has you covered. You can compare prices, schedules, and reviews of different providers and choose the best option for your needs. You can also enjoy discounts, rewards, and flexible cancellation policies. TicketMaster also offers customer support and travel tips to make your journey smooth and hassle-free.</p>
+      </div>
+
+      <div class="w3-half">
+        <a href="https://craftycrown.cf/"><img class="dynamic-image3" src="Images/Crafty Crown.jpg" style="width: 50%"></a>
+        <p><b>Crafty Crown:</b>Welcome to CraftyCrown, A website that showcases the amazing paintings and videos of a YouTube channel artist. CraftyCrown is a place where you can admire the beauty and creativity of the artist's work and learn from their techniques and tips. You can browse through the gallery of paintings in different styles and themes and watch the videos of how they were created. You can also interact with the artist and other fans through comments and feedback. CraftyCrown is a website for anyone who loves art and wants to be inspired by it.</p>
+      </div>
+
+      <div class="w3-half">
+        <div class="parallax">
+        <a href="https://kdm2004.github.io/Text-QRcode/"><img class="dynamic-image2" src="Images/Text to qr code.jpg" style="width: 50%"></a></div>
+        <p><b>Text to Qr-Code:</b>Welcome to QRCodeGen, a website that helps you create QR codes from any text, links, numbers, alphabets and much more. QR codes are a convenient way to share information and access content with a simple scan. With QRCodeGen, you can easily generate QR codes for your personal or professional use. You can customize the size, color, and design of your QR codes and download them in various formats. You can also scan and decode QR codes from other sources and view the information they contain. QRCodeGen is fast, free, and fun.</p>
+      </div>
+
+      <div class="w3-half">
+        <a href="https://kdm2004.github.io/Text-to-Quiz/"><img class="dynamic-image3" src="Images/Text to Quiz.jpg" style="width: 50%"></a>
+        <p><b>Text to Quizzes:</b>Welcome to QuizMaker, A website that helps you create quizzes from any text. Quizzes are a great way to test your knowledge and have fun at the same time. With QuizMaker, you can easily generate quizzes from any text, such as articles, books, lyrics, or speeches. You can also share your quizzes with others and challenge them to beat your score.</p>
+      </div>
+      
+     
+
+    <!-- End photo grid -->
+     </div>
+    
+   <h3 class="w3-padding-16"></h3>
+   <div class="text-container1">
+    <h2 class="w3-container typewriter" style="padding:128px 16px"><b>My Skills...</b></h2>
+  </div>
+  
+    <p class="w3-wide"><p><b>Web Design</b></p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+    </div>
+    <p class="w3-wide"><p><b>Photography</b></p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div>
+    <p class="w3-wide"><p><b>Management</b></p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><p><b>Leadership</b></p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><p><b>GitHub</b></p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><p><b>C Programming</b></p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div>
+    <p class="w3-wide"><p><b>C++</b></p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div>
+    <p class="w3-wide"><p><b>Python</b></p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
+    </div>
+    <p class="w3-wide"><p><b>Java</b></p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:50%">50%</div>
+    </div>
+    <p class="w3-wide"><p><b>JavaScript</b></p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
+    </div><br>
+
+    <!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">14+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div> -->
+
+    <!-- Testimonials -->
+    <!-- <h3 class="w3-padding-24 w3-text-black"><b><p>My Reputation:</p></b></h3>
+    <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
+    <p>Jane Doe is just awesome. I am so happy to have met her!</p><br>
+   
+    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>Jane Doe saved us from a web disaster.</p><br>
+    
+    <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than Jane Doe.</p><br> -->
+    
+    <!-- Grid for pricing tables -->
+    <!-- <h3 class="w3-padding-16"><b>My Price</b></h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div> -->
+    <!-- End Grid/Pricing tables -->
+    <!-- </div> -->
+    
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2 class="w3-text-black"></h2>
+    <hr class="w3-opacity">
+    <div class="text-container1">
+     <h2 class="w3-container typewriter w3-text-black" style="padding:128px 16px"><b>Contact Me...</b></h2>
+    </div>
+    
+    <div>
+      <h5 class="w3-text-black">
+        <p><b>Gmail- karandmodi04@gmail.com</b></p>
+        <p><b>Linkedin- KARAN MODI</b></p>
+        <p><b>Instagram- its_karan_08__</b></p>
+        <p><b>Twitter- @KARANMODI2004</b></p>
+        <p><b>Yahoo- karandmodi04@yahoo.com</b></p>
+      </h5>
+    </div>
+
+    <div>
+      <a href="https://www.linkedin.com/in/karan-modi-087a64236/" class="fa fa-linkedin dynamic-image2"></a>
+      <a href="https://www.google.com/" class="fa fa-google dynamic-image2"></a>
+      <a href="https://twitter.com/KARANMODI2004" class="fa fa-twitter dynamic-image2"></a>
+      <a href="https://www.yahoo.com/" class="fa fa-yahoo dynamic-image2"></a>
+      <a href="https://youtube.com/@techandme_22" class="fa fa-youtube dynamic-image2"></a>
+      <!-- <a href="#" class="fa fa-facebook dynamic-image2"></a> -->
+      <a href="https://www.instagram.com/its_karan_08__/" class="fa fa-instagram dynamic-image2"></a>
+      <!-- <a href="#" class="fa fa-pinterest dynamic-image2"></a> -->
+    </div>
+    
+  <!-- End Contact Section -->
+  </div>  
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
